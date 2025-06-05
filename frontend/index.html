@@ -1,0 +1,55 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Quiz Master</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Python Quiz Master</h1>
+            <p>Test your Python knowledge with these multiple-choice questions!</p>
+        </header>
+
+        <main>
+            <div id="welcome-screen" class="screen">
+                <h2>Welcome to the Python Quiz!</h2>
+                <p>This quiz will test your knowledge of Python programming basics.</p>
+                <p>Answer the multiple-choice questions by selecting one of the options.</p>
+                <button id="start-quiz-btn" class="btn primary-btn">Start Quiz</button>
+            </div>
+
+            <div id="quiz-screen" class="screen hidden">
+                <div id="question-container">
+                    <h2 id="question-text">Question goes here</h2>
+                    <div id="options-container">
+                        <!-- Options will be dynamically inserted here -->
+                    </div>
+                </div>
+                <div id="feedback-container" class="hidden">
+                    <p id="feedback-text"></p>
+                    <button id="next-question-btn" class="btn primary-btn">Next Question</button>
+                </div>
+            </div>
+
+            <div id="results-screen" class="screen hidden">
+                <h2>Quiz Results</h2>
+                <div id="stats-container">
+                    <p>Questions answered: <span id="questions-answered">0</span></p>
+                    <p>Correct answers: <span id="correct-answers">0</span></p>
+                    <p>Accuracy: <span id="accuracy">0%</span></p>
+                </div>
+                <button id="restart-quiz-btn" class="btn primary-btn">Restart Quiz</button>
+            </div>
+        </main>
+
+        <footer>
+            <p>Python Quiz Master &copy; 2023</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
